@@ -9,7 +9,8 @@ describe('Destructuring arrays makes shorter code', () => {
     let firstValue = [1];
       firstValue = firstValue.shift();
     //added 2nd line, shift takes the first item of an array
-    
+    //putting firstValue in brackets works too
+
     assert.strictEqual(firstValue, 1);
   });
   it('get the last item from array', () => {
@@ -18,7 +19,8 @@ describe('Destructuring arrays makes shorter code', () => {
     let lastValue = [1, 2, 3];
       lastValue = lastValue.pop()
     //pulled just the three from the array since its the last value pop will work
-    
+    //could also put lastValue in brackets and = 3
+
     assert.strictEqual(lastValue, 3);
   });
   it('swap two variables, in one operation', () => {
@@ -26,7 +28,7 @@ describe('Destructuring arrays makes shorter code', () => {
     
     // [x, y] = [x, y];
       [x, y] = [x, y].reverse()
-    //swapped x and y's using .reverse()
+    //swapped x and y's using .reverse(), could also just swap x and y without reverse
     
     assert.deepEqual([x, y], ['why', 'ax']);
   });
