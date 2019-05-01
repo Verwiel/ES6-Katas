@@ -23,8 +23,8 @@ describe('Destructuring also works on strings', () => {
   it('unicode character work too', () => {
     
     // const [space, coffee] = 'a ☕';
-    const [space, coffee] = 'a☕';
-    //removed the space in the string since it was technically a index
+    const [space, coffee] = ' ☕';
+    //removed the "a" so space = space and the coffee equalled coffee
     
     assert.equal(coffee, '\u{2615}');
   });
